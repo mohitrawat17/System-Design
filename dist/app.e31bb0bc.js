@@ -43595,21 +43595,7 @@ var Infinite_Scroll = function Infinite_Scroll() {
   })));
 };
 var _default = exports.default = Infinite_Scroll;
-},{"axios":"../node_modules/axios/index.js","react":"../node_modules/react/index.js"}],"Home.jsx":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _react = _interopRequireDefault(require("react"));
-var _reactRouterDom = require("react-router-dom");
-function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
-var Home = function Home() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Outlet, null)));
-};
-var _default = exports.default = Home;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/dist/index.js"}],"sessions/All_Sessions.jsx":[function(require,module,exports) {
+},{"axios":"../node_modules/axios/index.js","react":"../node_modules/react/index.js"}],"sessions/All_Sessions.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43620,44 +43606,170 @@ var _react = _interopRequireDefault(require("react"));
 var _reactRouterDom = require("react-router-dom");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 var All_Sessions = function All_Sessions() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    style: {
+      width: '100%',
+      height: '100%',
+      display: 'flex',
+      margin: '50px',
+      backgroundColor: 'lightblue',
+      padding: '10px',
+      color: '#0000',
+      fontWeight: '500px',
+      fontSize: '19px'
+    }
+  }, /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, " ", /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     to: "/infinite-scroll"
-  }, " ", /*#__PURE__*/_react.default.createElement("li", null, "Infinite Scroll"))));
+  }, " Infinite Scroll")), /*#__PURE__*/_react.default.createElement("li", null, " ", /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/accordion"
+  }, " Accordion "))));
 };
 var _default = exports.default = All_Sessions;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/dist/index.js"}],"index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/dist/index.js"}],"sessions/Accordion.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _react = _interopRequireWildcard(require("react"));
+function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function (e) { return e ? t : r; })(e); }
+function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+var Accordion = function Accordion() {
+  var _AccData$;
+  var AccData = [{
+    name: "Adeel Solangi",
+    language: "Sindhi",
+    id: "V59OF92YF627HFY0",
+    bio: "Donec lobortis eleifend condimentum. Cras dictum dolor lacinia lectus vehicula rutrum. Maecenas quis nisi nunc. Nam tristique feugiat est vitae mollis. Maecenas quis nisi nunc.",
+    version: 6.1
+  }, {
+    name: "Afzal Ghaffar",
+    language: "Sindhi",
+    id: "ENTOCR13RSCLZ6KU",
+    bio: "Aliquam sollicitudin ante ligula, eget malesuada nibh efficitur et. Pellentesque massa sem, scelerisque sit amet odio id, cursus tempor urna. Etiam congue dignissim volutpat. Vestibulum pharetra libero et velit gravida euismod.",
+    version: 1.88
+  }, {
+    name: "Aamir Solangi",
+    language: "Sindhi",
+    id: "IAKPO3R4761JDRVG",
+    bio: "Vestibulum pharetra libero et velit gravida euismod. Quisque mauris ligula, efficitur porttitor sodales ac, lacinia non ex. Fusce eu ultrices elit, vel posuere neque.",
+    version: 7.27
+  }, {
+    name: "Abla Dilmurat",
+    language: "Uyghur",
+    id: "5ZVOEPMJUI4MB4EN",
+    bio: "Donec lobortis eleifend condimentum. Morbi ac tellus erat.",
+    version: 2.53
+  }];
+  var _useState = (0, _react.useState)((_AccData$ = AccData[0]) === null || _AccData$ === void 0 ? void 0 : _AccData$.id),
+    _useState2 = _slicedToArray(_useState, 2),
+    accId = _useState2[0],
+    setAccId = _useState2[1];
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "acc-main-div"
+  }, AccData.map(function (accData) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      onClick: function onClick() {
+        if (accId && accId === accData.id) {
+          setAccId('');
+        } else {
+          setAccId(accData.id);
+        }
+      }
+    }, /*#__PURE__*/_react.default.createElement("h3", null, accData === null || accData === void 0 ? void 0 : accData.name), /*#__PURE__*/_react.default.createElement("p", {
+      className: accId === (accData === null || accData === void 0 ? void 0 : accData.id) ? '' : 'hide'
+    }, accData === null || accData === void 0 ? void 0 : accData.bio));
+  }));
+};
+var _default = exports.default = Accordion;
+},{"react":"../node_modules/react/index.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+  return bundleURL;
+}
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+  return '/';
+}
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+function updateLink(link) {
+  var newLink = link.cloneNode();
+  newLink.onload = function () {
+    link.remove();
+  };
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+var cssTimeout = null;
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+    cssTimeout = null;
+  }, 50);
+}
+module.exports = reloadCSS;
+},{"./bundle-url":"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"style.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
 var _client = _interopRequireDefault(require("react-dom/client"));
 var _reactRouterDom = require("react-router-dom");
 var _Infinite_Scroll = _interopRequireDefault(require("./sessions/Infinite_Scroll"));
-var _Home = _interopRequireDefault(require("./Home"));
 var _All_Sessions = _interopRequireDefault(require("./sessions/All_Sessions"));
+var _Accordion = _interopRequireDefault(require("./sessions/Accordion"));
+require("./style.css");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
-function Index(_ref) {
-  var children = _ref.children;
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, "Header"), children);
-}
 var appRouter = (0, _reactRouterDom.createBrowserRouter)([{
   path: "/",
-  element: /*#__PURE__*/_react.default.createElement(Index, null)
-}, {
-  path: "/home",
-  element: /*#__PURE__*/_react.default.createElement(_Home.default, null),
-  children: [{
-    path: "sessions",
-    element: /*#__PURE__*/_react.default.createElement(_All_Sessions.default, null)
-  }]
+  element: /*#__PURE__*/_react.default.createElement(_All_Sessions.default, null)
 }, {
   path: "/infinite-scroll",
   element: /*#__PURE__*/_react.default.createElement(_Infinite_Scroll.default, null)
+}, {
+  path: "/accordion",
+  element: /*#__PURE__*/_react.default.createElement(_Accordion.default, null)
 }]);
 var root = _client.default.createRoot(document.getElementById("root"));
 root.render( /*#__PURE__*/_react.default.createElement(_reactRouterDom.RouterProvider, {
   router: appRouter
 }));
-},{"react":"../node_modules/react/index.js","react-dom/client":"../node_modules/react-dom/client.js","react-router-dom":"../node_modules/react-router-dom/dist/index.js","./sessions/Infinite_Scroll":"sessions/Infinite_Scroll.jsx","./Home":"Home.jsx","./sessions/All_Sessions":"sessions/All_Sessions.jsx"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom/client":"../node_modules/react-dom/client.js","react-router-dom":"../node_modules/react-router-dom/dist/index.js","./sessions/Infinite_Scroll":"sessions/Infinite_Scroll.jsx","./sessions/All_Sessions":"sessions/All_Sessions.jsx","./sessions/Accordion":"sessions/Accordion.jsx","./style.css":"style.css"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -43682,7 +43794,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51276" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51502" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

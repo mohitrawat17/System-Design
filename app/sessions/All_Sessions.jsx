@@ -1,14 +1,21 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const All_Sessions = () => {
   return (
-    <div>
+    <div style={{width:'100%',height:'100%',display:'flex',margin:'50px',backgroundColor:'lightblue',padding:'10px',color:'#0000',fontWeight:'500px',fontSize:'19px'}}>
       <ul>
-       <Link to='/infinite-scroll'> <li>Infinite Scroll</li></Link>
+        <li>
+          {" "}
+          <Link to="/infinite-scroll"> Infinite Scroll</Link>
+        </li>
+        <li>
+          {" "}
+          <Link to="/accordion"> Accordion </Link>
+        </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default All_Sessions
+export default All_Sessions;

@@ -1,0 +1,88 @@
+.acc-main-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(206, 199, 199);
+    padding: 50px 0;
+}
+
+
+
+
+.acc-main-div div{
+    
+    color: black;
+    border: 1px solid black;
+    width: 50%;
+    margin: 20px 0;
+}
+
+.acc-main-div div h3{
+    padding: 10px;
+    background-color: blueviolet;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+
+.acc-main-div div p{
+    padding: 10px;
+}
+
+
+.hide{
+    display: none !important;
+}
+
+
+.active{
+    display: block !important;
+}
+
+
+  /* Remove default list styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Custom bullets */
+ul.custom-bullets li::before {
+    content: '•';
+    color: red;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Style list items */
+li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+/* Horizontal navigation */
+ul.horizontal-list {
+    display: flex;
+}
+ul.horizontal-list li {
+    margin-right: 20px;
+}
+
+/* Custom indentation */
+ul.custom-indent li {
+    margin-left: 20px;
+}
+
+/* Styling nested lists */
+ul.nested-list li ul {
+    margin-top: 5px;
+}
+
+/*# sourceMappingURL=/app.e31bb0bc.css.map */
