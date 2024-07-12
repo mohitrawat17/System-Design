@@ -13,6 +13,10 @@ const All_Sessions = () => {
           {" "}
           <Link to="/accordion"> Accordion </Link>
         </li>
+        <li>
+          {" "}
+          <Link to="/image-slider"> Image Slider </Link>
+        </li>
       </ul>
     </div>
   );

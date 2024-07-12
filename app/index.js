@@ -5,6 +5,7 @@ import Infinite_Scroll from "./sessions/Infinite_Scroll";
 import All_Sessions from "./sessions/All_Sessions";
 import Accordion from "./sessions/Accordion";
 import './style.css'
+import ImageSlider from "./sessions/ImageSlider";
 
 
 const appRouter = createBrowserRouter([
@@ -19,6 +20,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/accordion",
     element: <Accordion />,
+  },
+  {
+    path: "/image-slider",
+    element: <ImageSlider />,
   },
 ]);
 

@@ -84,3 +84,10 @@ ul.custom-indent li {
 ul.nested-list li ul {
     margin-top: 5px;
 }
+
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
