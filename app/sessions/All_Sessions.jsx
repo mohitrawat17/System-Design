@@ -17,6 +17,10 @@ const All_Sessions = () => {
           {" "}
           <Link to="/image-slider"> Image Slider </Link>
         </li>
+        <li>
+          {" "}
+          <Link to="/zustand"> Zustand </Link>
+        </li>
       </ul>
     </div>
   );

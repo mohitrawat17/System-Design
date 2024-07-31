@@ -6,6 +6,7 @@ import All_Sessions from "./sessions/All_Sessions";
 import Accordion from "./sessions/Accordion";
 import './style.css'
 import ImageSlider from "./sessions/ImageSlider";
+import Zustand from "./sessions/zustand";
 
 
 const appRouter = createBrowserRouter([
@@ -24,6 +25,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/image-slider",
     element: <ImageSlider />,
+  },
+  {
+    path: "/zustand",
+    element: <Zustand/>,
   },
 ]);
 
