@@ -7,6 +7,7 @@ import Accordion from "./sessions/Accordion";
 import './style.css'
 import ImageSlider from "./sessions/ImageSlider";
 import Zustand from "./sessions/zustand";
+import Game from "./sessions/TicTacToe";
 
 
 const appRouter = createBrowserRouter([
@@ -29,6 +30,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/zustand",
     element: <Zustand/>,
+  },
+  {
+    path: "/tik-tac-toe",
+    element: <Game/>,
   },
 ]);
 

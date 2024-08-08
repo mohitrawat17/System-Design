@@ -21,6 +21,10 @@ const All_Sessions = () => {
           {" "}
           <Link to="/zustand"> Zustand </Link>
         </li>
+        <li>
+          {" "}
+          <Link to="/tik-tac-toe"> Tik Tac Toe </Link>
+        </li>
       </ul>
     </div>
   );
