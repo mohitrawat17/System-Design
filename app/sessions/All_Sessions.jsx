@@ -25,6 +25,10 @@ const All_Sessions = () => {
           {" "}
           <Link to="/tik-tac-toe"> Tik Tac Toe </Link>
         </li>
+        <li>
+          {" "}
+          <Link to="/parallax"> Parallax </Link>
+        </li>
       </ul>
     </div>
   );
