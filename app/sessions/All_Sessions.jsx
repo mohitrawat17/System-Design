@@ -29,6 +29,10 @@ const All_Sessions = () => {
           {" "}
           <Link to="/parallax"> Parallax </Link>
         </li>
+        <li>
+          {" "}
+          <Link to="/framer"> Framer Motion </Link>
+        </li>
       </ul>
     </div>
   );

@@ -9,6 +9,7 @@ import ImageSlider from "./sessions/ImageSlider";
 import Zustand from "./sessions/zustand";
 import Game from "./sessions/TicTacToe";
 import ParallaxComp from "./sessions/parallax";
+import FramerMotion from "./sessions/FramerMotion";
 
 
 const appRouter = createBrowserRouter([
@@ -39,6 +40,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/parallax",
     element: <ParallaxComp/>,
+  },
+  {
+    path: "/framer",
+    element: <FramerMotion/>,
   },
 ]);
 
