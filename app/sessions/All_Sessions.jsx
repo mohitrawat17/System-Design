@@ -33,6 +33,10 @@ const All_Sessions = () => {
           {" "}
           <Link to="/framer"> Framer Motion </Link>
         </li>
+         <li>
+          {" "}
+          <Link to="/graph-ql"> GraphQL </Link>
+        </li>
       </ul>
     </div>
   );
