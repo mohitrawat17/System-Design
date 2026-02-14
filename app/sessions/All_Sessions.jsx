@@ -3,7 +3,19 @@ import { Link } from "react-router-dom";
 
 const All_Sessions = () => {
   return (
-    <div style={{width:'100%',height:'100%',display:'flex',margin:'50px',backgroundColor:'lightblue',padding:'10px',color:'#0000',fontWeight:'500px',fontSize:'19px'}}>
+    <div
+      style={{
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        margin: "50px",
+        backgroundColor: "lightblue",
+        padding: "10px",
+        color: "#0000",
+        fontWeight: "500px",
+        fontSize: "19px",
+      }}
+    >
       <ul>
         <li>
           {" "}
@@ -33,7 +45,10 @@ const All_Sessions = () => {
           {" "}
           <Link to="/framer"> Framer Motion </Link>
         </li>
-         <li>
+        <li>
+          <Link to="/virtualize"> List Virtuialization </Link>
+        </li>
+        <li>
           {" "}
           <Link to="/graph-ql"> GraphQL </Link>
         </li>

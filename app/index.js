@@ -4,13 +4,13 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Infinite_Scroll from "./sessions/Infinite_Scroll";
 import All_Sessions from "./sessions/All_Sessions";
 import Accordion from "./sessions/Accordion";
-import './style.css'
+import "./style.css";
 import ImageSlider from "./sessions/ImageSlider";
 import Zustand from "./sessions/zustand";
 import Game from "./sessions/TicTacToe";
 import ParallaxComp from "./sessions/parallax";
 import FramerMotion from "./sessions/FramerMotion";
-
+import Virtualization from "./sessions/Virtualization";
 
 const appRouter = createBrowserRouter([
   {
@@ -31,19 +31,23 @@ const appRouter = createBrowserRouter([
   },
   {
     path: "/zustand",
-    element: <Zustand/>,
+    element: <Zustand />,
   },
   {
     path: "/tik-tac-toe",
-    element: <Game/>,
+    element: <Game />,
   },
   {
     path: "/parallax",
-    element: <ParallaxComp/>,
+    element: <ParallaxComp />,
   },
   {
     path: "/framer",
-    element: <FramerMotion/>,
+    element: <FramerMotion />,
+  },
+  {
+    path: "/virtualize",
+    element: <Virtualization />,
   },
 ]);
 
