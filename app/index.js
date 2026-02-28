@@ -11,6 +11,7 @@ import Game from "./sessions/TicTacToe";
 import ParallaxComp from "./sessions/parallax";
 import FramerMotion from "./sessions/FramerMotion";
 import Virtualization from "./sessions/Virtualization";
+import Pagination from "./sessions/Pagination";
 
 const appRouter = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/virtualize",
     element: <Virtualization />,
+  },
+  {
+    path: "/pagination",
+    element: <Pagination />,
   },
 ]);
 

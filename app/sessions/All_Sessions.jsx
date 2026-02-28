@@ -52,6 +52,10 @@ const All_Sessions = () => {
           {" "}
           <Link to="/graph-ql"> GraphQL </Link>
         </li>
+        <li>
+          {" "}
+          <Link to="/pagination"> Pagination </Link>
+        </li>
       </ul>
     </div>
   );
