@@ -20,12 +20,10 @@ const Pagination = () => {
     setPageCount(products.length / pageSize);
   }, [pageSize, products]);
 
-  useEffect(()=>{
- const updated=products.slice(page*pageSize,(page*pageSize)+pageSize)
- setPaginatedData(updated)
-  },[products,page,pageSize])
-
-  console.log(page, pageSize, pageCount,paginatedData);
+  useEffect(() => {
+    const updated = products.slice(page * pageSize, page * pageSize + pageSize);
+    setPaginatedData(updated);
+  }, [products, page, pageSize]);
 
   return (
     <div
@@ -49,7 +47,7 @@ const Pagination = () => {
           {paginatedData?.map((item) => {
             return (
               <div
-              key={item.id}
+                key={item.id}
                 style={{
                   display: "flex",
                   gap: "10px",
@@ -81,9 +79,24 @@ const Pagination = () => {
               height: "100%",
             }}
           >
+            <h3
+              onClick={() => {
+                if (page >= 1) {
+                  setPage((prev) => prev - 1);
+                }
+              }}
+              style={{
+                borderRight: "1px solid grey",
+                cursor: "pointer",
+                margin: "auto",
+                textAlign: "center",
+              }}
+            >
+              {"<"}
+            </h3>
             {Array.from({ length: pageCount }).map((i, index) => (
               <h3
-              key={index}
+                key={index}
                 onClick={() => setPage(index)}
                 style={{
                   borderRight: "1px solid grey",
@@ -95,6 +108,20 @@ const Pagination = () => {
                 {index}
               </h3>
             ))}
+            <h3
+              onClick={() => {
+                if (page < pageCount - 1) {
+                  setPage((prev) => prev + 1);
+                }
+              }}
+              style={{
+                cursor: "pointer",
+                margin: "auto",
+                textAlign: "center",
+              }}
+            >
+              {">"}
+            </h3>
           </div>
         </div>
         <div
@@ -102,8 +129,8 @@ const Pagination = () => {
         >
           <select
             onChange={(e) => {
-                setPageSize(e.target.value)
-                setPage(0)
+              setPageSize(e.target.value);
+              setPage(0);
             }}
             style={{ height: "100%" }}
           >
