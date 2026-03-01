@@ -105,7 +105,7 @@ const Pagination = () => {
                   textAlign: "center",
                 }}
               >
-                {index}
+                {index+1}
               </h3>
             ))}
             <h3
