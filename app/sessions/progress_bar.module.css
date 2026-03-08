@@ -1,0 +1,21 @@
+.main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bar-main{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.bar-inner{
+    background-color: lightgreen;
+    text-align: right;
+    padding: 10px 0;
+    transition: 0.5s ease-in;
+}

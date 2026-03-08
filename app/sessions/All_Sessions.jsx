@@ -56,6 +56,10 @@ const All_Sessions = () => {
           {" "}
           <Link to="/pagination"> Pagination </Link>
         </li>
+        <li>
+          {" "}
+          <Link to="/progress-bar"> Progress Bar </Link>
+        </li>
       </ul>
     </div>
   );

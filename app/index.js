@@ -12,6 +12,7 @@ import ParallaxComp from "./sessions/parallax";
 import FramerMotion from "./sessions/FramerMotion";
 import Virtualization from "./sessions/Virtualization";
 import Pagination from "./sessions/Pagination";
+import ProgressBar from "./sessions/ProgressBar";
 
 const appRouter = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/pagination",
     element: <Pagination />,
+  },
+  {
+    path: "/progress-bar",
+    element: <ProgressBar />,
   },
 ]);
 
