@@ -13,6 +13,7 @@ import FramerMotion from "./sessions/FramerMotion";
 import Virtualization from "./sessions/Virtualization";
 import Pagination from "./sessions/Pagination";
 import ProgressBar from "./sessions/ProgressBar";
+import FileExp from "./sessions/FileExp";
 
 const appRouter = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/progress-bar",
     element: <ProgressBar />,
+  },
+  {
+    path: "/explorer",
+    element: <FileExp />,
   },
 ]);
 

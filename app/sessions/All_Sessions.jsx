@@ -60,6 +60,10 @@ const All_Sessions = () => {
           {" "}
           <Link to="/progress-bar"> Progress Bar </Link>
         </li>
+        <li>
+          {" "}
+          <Link to="/explorer"> File Explorer </Link>
+        </li>
       </ul>
     </div>
   );
