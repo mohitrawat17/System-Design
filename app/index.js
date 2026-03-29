@@ -14,6 +14,7 @@ import Virtualization from "./sessions/Virtualization";
 import Pagination from "./sessions/Pagination";
 import ProgressBar from "./sessions/ProgressBar";
 import FileExp from "./sessions/FileExp";
+import OTP from "./sessions/OTP";
 
 const appRouter = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/explorer",
     element: <FileExp />,
+  },
+  {
+    path: "/otp",
+    element: <OTP />,
   },
 ]);
 

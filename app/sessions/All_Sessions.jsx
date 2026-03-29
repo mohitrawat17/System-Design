@@ -64,6 +64,10 @@ const All_Sessions = () => {
           {" "}
           <Link to="/explorer"> File Explorer </Link>
         </li>
+        <li>
+          {" "}
+          <Link to="/otp"> OTP </Link>
+        </li>
       </ul>
     </div>
   );
